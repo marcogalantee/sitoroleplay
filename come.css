@@ -3,9 +3,13 @@ body{
     font-family: "Roboto";
 }
 .menu{
-    height: 150px;
-    width: 100%;
-    background-color: rgb(61, 59, 59) !important;
+    .menu {
+        padding: 0px;
+        margin-top: 0px;
+        height: 150px;
+        width: 100%; /* Rimuovi 'px' da '100%' */
+        background-color: rgb(61, 59, 59) !important;
+    }
     
     
 }
@@ -23,16 +27,12 @@ body{
     color: white;
     margin-top: 90px;
 }
-
 .header {
     border-radius: 5px;
-    
-
-    width: 100px;
+    width: 20%; /* Imposta la larghezza in percentuale rispetto al genitore */
+    max-width: 100px; /* Imposta una larghezza massima in pixel */
     height: 30px;
-    
     margin-top: 20px;
-    
     padding: 0px;
 }
 .x2{
@@ -166,7 +166,7 @@ display: inline-block;
         padding: 0px;
         margin-top: 0px;
         height: 150px;
-        width: 100%;
+        width: 100%px;
         background-color: rgb(61, 59, 59) !important;
     }
 
