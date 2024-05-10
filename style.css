@@ -153,10 +153,19 @@ display: inline-block;
         
     }
 
+    .uno h1{
+        font-size: 20px;
+    }
+    .uno p{
+        font-size: 16px;
+    }
+
     .titolo{
         width: 100%;
+        font-size: 30px;
     }
     .titolo:hover{
         transform: scale(1.0);
         cursor: default;
     }
+}
