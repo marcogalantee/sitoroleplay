@@ -9,6 +9,16 @@ body{
     
     
 }
+.inform
+.header {
+    border-radius: 5px;
+    width: 20%; /* Imposta la larghezza in percentuale rispetto al genitore */
+    max-width: 100px; /* Imposta una larghezza massima in pixel */
+    height: 30px;
+    margin-top: 20px;
+    padding: 0px;
+    
+}
 .informazioni{
     position: relative;
     display: flex;
@@ -23,13 +33,17 @@ body{
     color: white;
     margin-top: 90px;
 }
-.header {
+
+.x{
     border-radius: 5px;
-    width: 20%; /* Imposta la larghezza in percentuale rispetto al genitore */
-    max-width: 100px; /* Imposta una larghezza massima in pixel */
+    width: 100px;
     height: 30px;
-    margin-top: 20px;
-    padding: 0px;
+    background-color: rgba(194, 193, 196, 0.733);
+    margin-right: 20px;
+    margin-top: 30px;
+    text-align: center;
+    padding: 10px;
+    display: none !important;
 }
 .x2{
     border-radius: 5px;
@@ -41,6 +55,7 @@ body{
     margin-top: 30px;
     text-align: center;
     padding: 10px;
+    
 }
 .x3{
     position: absolute;
@@ -56,26 +71,9 @@ body{
     color: rgb(255, 255, 255);
     scale: 1.0;
 }
-a{
-    text-decoration: none !important;
-    
-}
 
-.titolo{
-    width: 1000px;
-    margin: 0   auto;
-    margin-top: 70px;
-    margin-bottom: 70px;
-    text-align: center;
-    font-weight: 500;
-    font-size: 60px;
-    scale: 1.0;
-    transition: all 0.2s;
-    
-}
-.titolo:hover{
-    transform: scale(1.1);
-    cursor: default;
+a{
+    text-decoration: none;
 }
 
 .grigio{
@@ -110,24 +108,41 @@ margin-left: 50px;
 display: inline-block;
 }
 
-
-/* Nasconde il menu a tendina per schermi più grandi di 500px */
-.menu-tendina {
-    display: none;
-}
-
-/* Stili per il bottone del menu a tendina */
-.bottone-menu {
-    display: none;
-    cursor: pointer;
-}
-
-/* Mostra il bottone del menu e il menu a tendina per schermi fino a 500px */
-
+.titolo{
+    width: 1000px;
+    margin: 0   auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 60px;
+    scale: 1.0;
+    transition: all 0.2s;
     
-/* Altri stili rimangono invariati */
+}
+.titolo:hover{
+    transform: scale(1.1);
+    cursor: default;
+}
+/* Stili esistenti */
 
-/* Correzioni e stili per il menu a tendina */
+@media screen and (max-width: 1200px) {
+    .x2 {
+        display: none !important;
+    }
+}
+@media screen and (min-width: 501px) {
+    .header {
+        display: none !important;
+    }
+}
+
+/* Altri stili e media query */
+@media screen and (min-width: 1024px) {
+    .header {
+        display: none;
+    }
+}
 
 @media  screen and (max-width: 500px){
 
@@ -138,6 +153,7 @@ display: inline-block;
         padding: 10px 20px; /* Padding del bottone */
         border: none; /* Rimuove il bordo del bottone */
         margin: 10px; /* Margine intorno al bottone */
+        margin-top: 30px;
         font-size: 16px; /* Dimensione del testo del bottone */
     }
 
