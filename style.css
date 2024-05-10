@@ -1,65 +1,162 @@
 body{
     margin: 0;
-    
-
-    
+    font-family: "Roboto";
 }
-.sfondo{
+.menu{
+    height: 150px;
     width: 100%;
-    height: 945px;
-    background: url(1d171aaa3a1b8d3a6144d523978ede1b.jpg);
-    filter: blur(4px);
-    background-size: cover;
-    background-position: center;
+    background-color: rgb(61, 59, 59) !important;
+    
     
 }
-.title{
+.informazioni{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
     padding: 20px;
-    background-color: rgba(41, 89, 116, 0.1);
-    border-radius: 30px;
+    font-family: "Roboto", sans-serif ;
+    font-weight: 500;
+}
+.amain{
+    font-family: "Roboto", sans-serif ;
+    font-weight: 500;
+    color: white;
+    margin-top: 90px;
+}
+.x{
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    background-color: rgba(194, 193, 196, 0.733);
+    margin-right: 20px;
+    margin-top: 30px;
+    text-align: center;
+    padding: 10px;
+    display: none !important;
+}
+.x2{
+    border-radius: 5px;
+    background-color: rgba(194, 193, 196, 0.733);
+
+    width: 100px;
+    height: 30px;
+    margin-right: 20px;
+    margin-top: 30px;
+    text-align: center;
+    padding: 10px;
+    display: none;
+}
+.x3{
     position: absolute;
-    height: 500px;
-    width: 500px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%)
-  
+    left: 50%;
+    transform: translateX(-50%);
+    
+    width: 100%px;
+    height: 40px;
+    font-size: 100px;
+    
 }
-.title{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.corso{
-    text-align: center  ;
-    scale: 1.0;
-    transition: all 0.3s;
+.atitle{
     color: rgb(255, 255, 255);
-}
-.corso:hover {
-    transform: scale(1.1);
-}
-.tabella{
-    font-size: 20px;
-    margin: 0   auto;
-}
-tr{
-    cursor: pointer;
-}
-.cose{
-    padding: 20px;
     scale: 1.0;
-    transition: 0.3s;
 }
-.cose:hover{
-    transform: scale(1.1);
-}
-.contenuti{
-    margin-top: 80px;
-}
+
 a{
     text-decoration: none;
-    color: rgb(255, 255, 255);
-    
 }
 
+.grigio{
+    background-color: rgb(231, 231, 231);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 70px;
+}
 
+.bianco{
+    background-color: rgb(255, 255, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 70px;
+}
 
+.uno{
+    width: 900px;
+    align-items: center;
+    margin: auto;
+}
+.uno p{
+    font-size: 20px;
+}
+.uno h1{
+    font-size: 40px;
+}
+table{
+border-collapse: collapse;
+margin-top: 50px;
+margin-left: 50px;
+display: inline-block;
+}
+
+.titolo{
+    width: 1000px;
+    margin: 0   auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 60px;
+    scale: 1.0;
+    transition: all 0.2s;
+    
+}
+.titolo:hover{
+    transform: scale(1.1);
+    cursor: default;
+}
+@media  screen and (max-width: 500px){
+    .menu{
+        padding: 0px;
+        margin-top: 0px;
+        height: 150px;
+        width: 100%;
+        background-color: rgb(61, 59, 59) !important;
+    }
+
+    .x3{
+        font-size: 50px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .x,.x2{
+        display: none !important;
+    }
+    
+    .bianco{
+        padding: 10px;
+    }
+    .grigio{
+        width:100%px;
+        padding: 10px;
+    }
+    table {
+        margin-top: 20px;
+        margin-left: 2px;
+        max-width: 100%;
+        width: auto;
+        width: 100%;
+        overflow-x: auto;
+    }
+   
+
+    .uno{
+        width: 100%;
+        
+    }
+
+    .titolo{
+        width: 100%;
+    }
+    .titolo:hover{
+        transform: scale(1.0);
+        cursor: default;
+    }
