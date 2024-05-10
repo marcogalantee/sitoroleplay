@@ -213,3 +213,89 @@ display: inline-block;
         cursor: default;
     }
 }
+
+@media  screen and (max-width: 410px){
+
+    .bottone-menu {
+        display: block;
+        background-color: #9e9696; /* Colore di sfondo del bottone */
+        color: white; /* Colore del testo del bottone */
+        padding: 10px 20px; /* Padding del bottone */
+        border: none; /* Rimuove il bordo del bottone */
+        margin: 10px; /* Margine intorno al bottone */
+        margin-top: 30px;
+        font-size: 16px; /* Dimensione del testo del bottone */
+    }
+
+    .menu-tendina {
+        display: none; /* Nasconde il menu a tendina di default */
+        flex-direction: column;
+        background-color: #b4b4b4; /* Colore di sfondo del menu a tendina */
+        width: 110px; /* Larghezza del menu a tendina */
+    }
+
+    .menu-tendina a {
+        color: black; /* Colore dei link */
+        padding: 10px; /* Padding dei link */
+        text-decoration: none; /* Rimuove il sottolineato dai link */
+        display: block; /* Fa sì che i link occupino l'intera larghezza */
+    }
+
+    .menu-tendina a:hover {
+        background-color: #ddd; /* Colore di sfondo al passaggio del mouse */
+    }
+    .menu{
+        padding: 0px;
+        margin-top: 0px;
+        height: 150px;
+        width: 100%px;
+        background-color: rgb(61, 59, 59) !important;
+    }
+
+    .x3{
+        font-size: 50px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .x,.x2{
+        display: none !important;
+    }
+    
+    .bianco{
+        padding: 10px;
+    }
+    .grigio{
+        width:100%px;
+        padding: 10px;
+    }
+    table {
+        margin-top: 20px;
+        margin-left: 2px;
+        max-width: 100%;
+        width: auto;
+        width: 100%;
+        overflow-x: auto;
+    }
+   
+
+    .uno{
+        width: 100%;
+        
+    }
+
+    .uno h1{
+        font-size: 20px;
+    }
+    .uno p{
+        font-size: 16px;
+    }
+
+    .titolo{
+        width: 100%;
+        font-size: 30px;
+    }
+    .titolo:hover{
+        transform: scale(1.0);
+        cursor: default;
+    }
+}
