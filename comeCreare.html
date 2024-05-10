@@ -10,11 +10,19 @@
     <title>Document</title>
 </head>
 <body>
+    
     <header>
-        <div class="header">
+        <div class="riga">
             <div class="menu">
                 <div class="informazioni">
-                    
+                    <div class="header">
+                        <button class="bottone-menu">Menu</button>
+                        <div class="menu-tendina">
+                            <a href="regolamento.html">Regolamento</a>
+                            <a href="index.html">ROLE PLAY</a>
+                            <!-- Aggiungi altri link qui -->
+                        </div>
+                    </div>
                     <div class="x2">
                         <a  class="amain" href="regolamento.html">Regolamento</a>
                     </div>
@@ -82,6 +90,20 @@
     </div>
 </div>
     
-    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    var bottoneMenu = document.querySelector('.bottone-menu');
+    var menuTendina = document.querySelector('.menu-tendina');
+
+    bottoneMenu.addEventListener('click', function() {
+        // Toggle della visibilità del menu a tendina
+        if (menuTendina.style.display === 'block') {
+            menuTendina.style.display = 'none';
+        } else {
+            menuTendina.style.display = 'block';
+        }
+    });
+});
+    </script>
 </body>
 </html>

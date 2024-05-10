@@ -24,6 +24,17 @@ body{
     margin-top: 90px;
 }
 
+.header {
+    border-radius: 5px;
+    background-color: rgba(194, 193, 196, 0.733);
+
+    width: 100px;
+    height: 30px;
+    
+    margin-top: 20px;
+    
+    padding: 0px;
+}
 .x2{
     border-radius: 5px;
     background-color: rgba(194, 193, 196, 0.733);
@@ -102,53 +113,64 @@ margin-top: 50px;
 margin-left: 50px;
 display: inline-block;
 }
-@media  screen and (max-width: 500px){
-    .menu{
-        padding: 0px;
-        margin-top: 0px;
-        height: 150px;
-        width: 100%;
-        background-color: rgb(61, 59, 59) !important;
+
+
+/* Nasconde il menu a tendina per schermi più grandi di 500px */
+.menu-tendina {
+    display: none;
+}
+
+/* Stili per il bottone del menu a tendina */
+.bottone-menu {
+    display: none;
+    cursor: pointer;
+}
+
+/* Mostra il bottone del menu e il menu a tendina per schermi fino a 500px */
+
+    
+/* Altri stili rimangono invariati */
+
+/* Correzioni e stili per il menu a tendina */
+@media screen and (max-width: 500px) {
+    .bottone-menu {
+        display: block;
+        background-color: #333; /* Colore di sfondo del bottone */
+        color: white; /* Colore del testo del bottone */
+        padding: 10px 20px; /* Padding del bottone */
+        border: none; /* Rimuove il bordo del bottone */
+        margin: 10px; /* Margine intorno al bottone */
+        font-size: 16px; /* Dimensione del testo del bottone */
     }
 
-    .x3{
-        font-size: 50px;
-        text-align: center;
-        margin: 0 auto;
+    .menu-tendina {
+        display: none; /* Nasconde il menu a tendina di default */
+        flex-direction: column;
+        background-color: #f9f9f9; /* Colore di sfondo del menu a tendina */
+        width: 100%; /* Larghezza del menu a tendina */
     }
-    .x,.x2{
+
+    .menu-tendina a {
+        color: black; /* Colore dei link */
+        padding: 10px; /* Padding dei link */
+        text-decoration: none; /* Rimuove il sottolineato dai link */
+        display: block; /* Fa sì che i link occupino l'intera larghezza */
+    }
+
+    .menu-tendina a:hover {
+        background-color: #ddd; /* Colore di sfondo al passaggio del mouse */
+    }
+
+    .x, .x2 {
         display: none !important;
     }
-    
-    .bianco{
+
+    .bianco, .grigio, .uno, .titolo {
         padding: 10px;
-    }
-    .grigio{
-        width:100%px;
-        padding: 10px;
-    }
-    table {
-        margin-top: 20px;
-        margin-left: 2px;
-        max-width: 100%;
-        width: auto;
         width: 100%;
-        overflow-x: auto;
-    }
-   
-
-    .uno{
-        width: 100%;
-        
     }
 
-    
-
-    .titolo{
-        width: 100%;
-        font-size: 30px;
-    }
-    .titolo:hover{
+    .titolo:hover {
         transform: scale(1.0);
         cursor: default;
     }
