@@ -3,13 +3,9 @@ body{
     font-family: "Roboto";
 }
 .menu{
-    .menu {
-        padding: 0px;
-        margin-top: 0px;
-        height: 150px;
-        width: 100%; /* Rimuovi 'px' da '100%' */
-        background-color: rgb(61, 59, 59) !important;
-    }
+    height: 150px;
+    width: 100%;
+    background-color: rgb(61, 59, 59) !important;
     
     
 }

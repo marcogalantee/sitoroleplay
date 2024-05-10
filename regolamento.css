@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    font-family: "Roboto";
 }
 .menu{
     height: 150px;
@@ -22,15 +23,13 @@ body{
     color: white;
     margin-top: 90px;
 }
-.x{
+.header {
     border-radius: 5px;
-    width: 100px;
+    width: 20%; /* Imposta la larghezza in percentuale rispetto al genitore */
+    max-width: 100px; /* Imposta una larghezza massima in pixel */
     height: 30px;
-    background-color: rgba(194, 193, 196, 0.733);
-    margin-right: 20px;
-    margin-top: 30px;
-    text-align: center;
-    padding: 10px;
+    margin-top: 20px;
+    padding: 0px;
 }
 .x2{
     border-radius: 5px;
@@ -62,9 +61,22 @@ a{
     
 }
 
-
-
-
+.titolo{
+    width: 1000px;
+    margin: 0   auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 60px;
+    scale: 1.0;
+    transition: all 0.2s;
+    
+}
+.titolo:hover{
+    transform: scale(1.1);
+    cursor: default;
+}
 
 .grigio{
     background-color: rgb(231, 231, 231);
@@ -85,30 +97,73 @@ a{
     align-items: center;
     margin: auto;
 }
+.uno p{
+    font-size: 20px;
+}
+.uno h1{
+    font-size: 40px;
+}
 table{
 border-collapse: collapse;
 margin-top: 50px;
 margin-left: 50px;
 display: inline-block;
-
-}
-tr,td{
-    border: 1px solid #000000; 
-    padding: 3px;
-    padding-left: 15px;
-    padding-right: 15px;
-
 }
 
 
+/* Nasconde il menu a tendina per schermi più grandi di 500px */
+.menu-tendina {
+    display: none;
+}
+
+/* Stili per il bottone del menu a tendina */
+.bottone-menu {
+    display: none;
+    cursor: pointer;
+}
+
+/* Mostra il bottone del menu e il menu a tendina per schermi fino a 500px */
+
+    
+/* Altri stili rimangono invariati */
+
+/* Correzioni e stili per il menu a tendina */
 
 @media  screen and (max-width: 500px){
+
+    .bottone-menu {
+        display: block;
+        background-color: #9e9696; /* Colore di sfondo del bottone */
+        color: white; /* Colore del testo del bottone */
+        padding: 10px 20px; /* Padding del bottone */
+        border: none; /* Rimuove il bordo del bottone */
+        margin: 10px; /* Margine intorno al bottone */
+        font-size: 16px; /* Dimensione del testo del bottone */
+    }
+
+    .menu-tendina {
+        display: none; /* Nasconde il menu a tendina di default */
+        flex-direction: column;
+        background-color: #b4b4b4; /* Colore di sfondo del menu a tendina */
+        width: 110px; /* Larghezza del menu a tendina */
+    }
+
+    .menu-tendina a {
+        color: black; /* Colore dei link */
+        padding: 10px; /* Padding dei link */
+        text-decoration: none; /* Rimuove il sottolineato dai link */
+        display: block; /* Fa sì che i link occupino l'intera larghezza */
+    }
+
+    .menu-tendina a:hover {
+        background-color: #ddd; /* Colore di sfondo al passaggio del mouse */
+    }
     .menu{
         padding: 0px;
         margin-top: 0px;
         height: 150px;
-        width: 100%;
-        background-color: rgb(0, 0, 0) !important;
+        width: 100%px;
+        background-color: rgb(61, 59, 59) !important;
     }
 
     .x3{
@@ -135,14 +190,26 @@ tr,td{
         width: 100%;
         overflow-x: auto;
     }
-    th, td {
-        padding: 0px;
-        margin: 0;
-        white-space: nowrap;
-    }
+   
 
     .uno{
         width: 100%;
         
+    }
+
+    .uno h1{
+        font-size: 20px;
+    }
+    .uno p{
+        font-size: 16px;
+    }
+
+    .titolo{
+        width: 100%;
+        font-size: 30px;
+    }
+    .titolo:hover{
+        transform: scale(1.0);
+        cursor: default;
     }
 }
