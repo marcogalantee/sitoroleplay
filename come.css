@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    font-family: "Roboto";
 }
 .menu{
     height: 150px;
@@ -22,16 +23,7 @@ body{
     color: white;
     margin-top: 90px;
 }
-.x{
-    border-radius: 5px;
-    width: 100px;
-    height: 30px;
-    background-color: rgba(194, 193, 196, 0.733);
-    margin-right: 20px;
-    margin-top: 30px;
-    text-align: center;
-    padding: 10px;
-}
+
 .x2{
     border-radius: 5px;
     background-color: rgba(194, 193, 196, 0.733);
@@ -61,4 +53,103 @@ a{
     text-decoration: none !important;
     
 }
+
+.titolo{
+    width: 1000px;
+    margin: 0   auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 60px;
+    scale: 1.0;
+    transition: all 0.2s;
     
+}
+.titolo:hover{
+    transform: scale(1.1);
+    cursor: default;
+}
+
+.grigio{
+    background-color: rgb(231, 231, 231);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 70px;
+}
+
+.bianco{
+    background-color: rgb(255, 255, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 70px;
+}
+
+.uno{
+    width: 900px;
+    align-items: center;
+    margin: auto;
+}
+.uno p{
+    font-size: 20px;
+}
+.uno h1{
+    font-size: 40px;
+}
+table{
+border-collapse: collapse;
+margin-top: 50px;
+margin-left: 50px;
+display: inline-block;
+}
+@media  screen and (max-width: 500px){
+    .menu{
+        padding: 0px;
+        margin-top: 0px;
+        height: 150px;
+        width: 100%;
+        background-color: rgb(61, 59, 59) !important;
+    }
+
+    .x3{
+        font-size: 50px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .x,.x2{
+        display: none !important;
+    }
+    
+    .bianco{
+        padding: 10px;
+    }
+    .grigio{
+        width:100%px;
+        padding: 10px;
+    }
+    table {
+        margin-top: 20px;
+        margin-left: 2px;
+        max-width: 100%;
+        width: auto;
+        width: 100%;
+        overflow-x: auto;
+    }
+   
+
+    .uno{
+        width: 100%;
+        
+    }
+
+    
+
+    .titolo{
+        width: 100%;
+        font-size: 30px;
+    }
+    .titolo:hover{
+        transform: scale(1.0);
+        cursor: default;
+    }
+}
