@@ -26,7 +26,7 @@ body{
 
 .header {
     border-radius: 5px;
-    background-color: rgba(194, 193, 196, 0.733);
+    
 
     width: 100px;
     height: 30px;
@@ -132,10 +132,12 @@ display: inline-block;
 /* Altri stili rimangono invariati */
 
 /* Correzioni e stili per il menu a tendina */
-@media screen and (max-width: 500px) {
+
+@media  screen and (max-width: 500px){
+
     .bottone-menu {
         display: block;
-        background-color: #333; /* Colore di sfondo del bottone */
+        background-color: #9e9696; /* Colore di sfondo del bottone */
         color: white; /* Colore del testo del bottone */
         padding: 10px 20px; /* Padding del bottone */
         border: none; /* Rimuove il bordo del bottone */
@@ -146,8 +148,8 @@ display: inline-block;
     .menu-tendina {
         display: none; /* Nasconde il menu a tendina di default */
         flex-direction: column;
-        background-color: #f9f9f9; /* Colore di sfondo del menu a tendina */
-        width: 100%; /* Larghezza del menu a tendina */
+        background-color: #b4b4b4; /* Colore di sfondo del menu a tendina */
+        width: 110px; /* Larghezza del menu a tendina */
     }
 
     .menu-tendina a {
@@ -160,17 +162,57 @@ display: inline-block;
     .menu-tendina a:hover {
         background-color: #ddd; /* Colore di sfondo al passaggio del mouse */
     }
+    .menu{
+        padding: 0px;
+        margin-top: 0px;
+        height: 150px;
+        width: 100%;
+        background-color: rgb(61, 59, 59) !important;
+    }
 
-    .x, .x2 {
+    .x3{
+        font-size: 50px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .x,.x2{
         display: none !important;
     }
-
-    .bianco, .grigio, .uno, .titolo {
+    
+    .bianco{
         padding: 10px;
+    }
+    .grigio{
+        width:100%px;
+        padding: 10px;
+    }
+    table {
+        margin-top: 20px;
+        margin-left: 2px;
+        max-width: 100%;
+        width: auto;
         width: 100%;
+        overflow-x: auto;
+    }
+   
+
+    .uno{
+        width: 100%;
+        
     }
 
-    .titolo:hover {
+    .uno h1{
+        font-size: 20px;
+    }
+    .uno p{
+        font-size: 16px;
+    }
+
+    .titolo{
+        width: 100%;
+        font-size: 30px;
+    }
+    .titolo:hover{
         transform: scale(1.0);
         cursor: default;
     }
